@@ -8,6 +8,7 @@ Here's an example of the program:
 ![Original Image](demoPics/graph-based-segmentation-1-original.png?raw=true "Original Image")
 ![Segmented Image](demoPics/graph-based-segmentation-1.png?raw=true "Segmented Image")
 
+I only implemented the grid graph approach from the paper with grayscale images.
 I recommend reading the paper, and secondarily the commends on the code.
 
 ## Getting Started
