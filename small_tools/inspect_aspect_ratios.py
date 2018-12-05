@@ -1,5 +1,5 @@
 import csv
-import cv2
+import imagesize
 import os
 import numpy as np
 import matplotlib.pyplot as plt
@@ -13,8 +13,8 @@ VALIDATION_NAME = "full_rects_val.csv"
 NUM_PROCESSOR = 8
 
 def aspectratio(img_file):
-    img = cv2.imread(img_file)
-    ar = img.shape[1] / img.shape[0] # w/h
+    width, height = imagesize.get(img_file)
+    ar = width / height # w/h
     return ar
 
 def drawaspectratios(aspectratios):
